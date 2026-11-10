@@ -1,0 +1,12 @@
+{
+  "name": "techdesk-qa-challenge",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Monorepo TechDesk QA Target - Aplicação Fullstack para treinamento de QA e Automação de Testes com IA",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "db:reset": "npm --prefix backend run db:reset"
+  }
+}
