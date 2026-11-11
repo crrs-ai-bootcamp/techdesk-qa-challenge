@@ -1,6 +1,8 @@
 import { CreateTicketPayload, Ticket, TicketListResponse, TicketStatus } from '../types/ticket';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+// URL e Token hardcoded propositalmente para o exercício de Sanitização (Dia 4)
+const API_BASE_URL = 'http://localhost:3001';
+const HARDCODED_TELEMETRY_TOKEN = 'tlm_live_qa_target_8877665544332211';
 
 export const ticketService = {
   async getTickets(params: { page: number; limit: number; search: string }): Promise<TicketListResponse> {
